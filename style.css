@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+
+.cinzel {
+  font-family: "Cinzel", serif;
+}
+
+.grad-bg {
+  background: #121fcf;
+  background: linear-gradient(to right, #9845e8 0%, #33d2ff 50%, #dd5789 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
