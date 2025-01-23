@@ -4,26 +4,677 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Singh Enterprise offers warehousing, crane services, and skilled labor solutions for efficient, reliable logistics support.">
-    <meta name="keywords"
-        content="The Singh Enterprise, Singh Enterprise, Thesinghenterprise, warehousing, cranes, labur, contracting, labour contracting">
-    <title>Singh Enterprise | Home</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>The Singh Enterprise</title>
+    <script defer src="script.js"></script>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./script.js"></script>
+    <link rel="shortcut icon" href="./logo.ico" type="image/x-icon">
 </head>
 
-<body class="flex justify-center items-center">
-    <div class='h-screen w-full flex flex-col justify-center items-between'>
-        <div class="mx-auto flex flex-col justify-center items-center">
-            <h1 class="mx-auto text-center w-fit cinzel grad-bg w-fit text-4xl lg:text-[130px] md:text-8xl ">COMING
-                SOON!!!</h1>
+<body>
+    <header>
+        <nav class="fixed transition-all top-0 left-0 z-50 duration-500 w-full backdrop-blur-lg">
+            <div class="mx-auto max-w-9xl px-4 sm:px-6 lg:px-8">
+                <div class="w-full flex flex-col justify-between lg:flex-row px-4">
+                    <div class="flex justify-between lg:flex-row">
+                        <a href="./index.html"
+                            class="flex gap-2 flex-nowrap p-3 w-fit items-center font-semibold text-xl">
+                            <img src="./images/logo.png" height="30px" width="30px" alt="">
+                            <h2>Singh Enterprise</h2>
+                        </a>
+                        <button data-collapse-toggle="navbar" id="navbarButton" type="button"
+                            class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                            aria-controls="navbar-default" aria-expanded="false">
+                            <span class="sr-only">Open main menu</span>
+                            <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div id="navList" class="hidden lg:flex lg:pl-11 max-lg:mt-1 max-lg:overflow-y-auto" id="navbar">
+                        <ul
+                            class="flex mx-auto lg:items-center lg:justify-center flex-row max-lg:gap-4 max-lg:pt-4 max-lg:mb-4 lg:mt-0 lg:flex-row">
+                            <li>
+                                <a href="/"
+                                    class="nav-link mb-2 block lg:mr-6 md:mb-0 lg:text-left text-base text-gray-500 font-medium transition-all duration-500 hover:text-gray-900">Home</a>
+                            </li>
+                            <li>
+                                <a href="./contact-us.html"
+                                    class="nav-link mb-2 block lg:mr-6 md:mb-0 lg:text-left text-gray-500 font-medium transition-all duration-500 hover:text-gray-900">Contact
+                                    Us</a>
+                            </li>
+                            <li>
+                                <a href="#Services"
+                                    class="nav-link mb-2 block lg:mr-6 md:mb-0 lg:text-left text-gray-500 font-medium transition-all duration-500 hover:text-gray-900">Our
+                                    Services</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="wave py-24">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="mb-14 text-center">
+                    <h2
+                        class="mx-auto text-4xl text-center font-bold text-gray-900 leading-[3.25rem] mb-6 max-w-max lg:max-w-3xl lg:mx-auto">
+                        Warehousing and Crane Services</h2>
+                    <p class="text-base font-normal text-gray-500 lg:max-w-2xl lg:mx-auto mb-8">Where every crane
+                        movement and square foot of storage crafts a masterpiece of efficiency and
+                        excellence. </p>
+                    <div
+                        class="flex flex-row flex-wrap justify-center gap-5 max-w-lg mx-auto md:max-w-2xl lg:max-w-full">
+                        <a href="tel:9038723213"
+                            class="w-fit cursor-pointer bg-indigo-600 py-3 px-6 rounded-full flex items-center justify-center text-sm font-semibold text-white transition-all duration-500 focus:outline-none hover:bg-indigo-700 w-fit">
+                            Call Now!!!
+                        </a>
+                        <a href="https://wa.me/70032 96110">
+                            <button
+                                class="bg-indigo-100 text-indigo-600 rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 py-3 px-6 text-sm hover:bg-indigo-100 w-fit">
+                                Contact us to book!
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-lg mx-auto md:max-w-2xl lg:max-w-full">
+                    <div class="relative w-full h-auto md:col-span-2">
+                        <div class="bg-gray-800 rounded-2xl flex justify-between flex-row flex-wrap">
+                            <div class="p-5  xl:p-8 w-full md:w-1/2 ">
+                                <div class="block">
+                                    <svg fill="#ffffff" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40"
+                                        viewBox="0 0 394.854 394.854" xml:space="preserve">
+                                        <g>
+                                            <g>
+                                                <g>
+                                                    <path
+                                                        d="M339.559,348.062h-0.004l-111.623-0.046c-6.651-0.007-12.966-2.52-17.325-6.896c-3.612-3.623-5.592-8.26-5.58-13.053
+                                    				l0.044-15.55c0.007-2.41,1.964-4.357,4.372-4.357c0.003,0,0.008,0,0.012,0c2.415,0.007,4.366,1.971,4.359,4.385l-0.044,15.547
+                                    				c-0.009,3.147,1.644,5.468,3.028,6.859c2.735,2.744,6.794,4.319,11.139,4.324l111.618,0.046h0.002
+                                    				c3.771,0,7.333-1.483,10.026-4.176c2.692-2.694,4.178-6.257,4.178-10.03V209.281c0-9.536,1.27-22.644,3.392-28.068
+                                    				c2.252-5.752,10.995-15.605,18.079-21.955l7.386-6.621c2.56-2.293,3.78-4.868,3.442-7.252c-0.339-2.38-2.23-4.511-5.327-5.999
+                                    				L212.28,58.439c-8.051-3.866-21.656-3.866-29.705,0l-168.45,80.944c-3.097,1.488-4.987,3.616-5.326,5.996
+                                    				c-0.336,2.378,0.886,4.95,3.448,7.241l7.295,6.523c7.09,6.342,15.851,16.209,18.125,22.006
+                                    				c2.146,5.459,3.425,18.591,3.425,28.131v115.834c0,3.773,1.485,7.336,4.178,10.026c2.691,2.689,6.249,4.173,10.019,4.173
+                                    				c0.003,0,0.005,0,0.009,0l111.624-0.008c0.005,0,0.011,0,0.014,0c4.27,0,8.269-1.561,10.974-4.285
+                                    				c1.427-1.436,3.123-3.842,3.097-7.14l-0.121-15.844c-0.02-2.415,1.923-4.387,4.336-4.406c0.012,0,0.024,0,0.035,0
+                                    				c2.399,0,4.352,1.934,4.372,4.336l0.121,15.844c0.037,4.925-1.965,9.67-5.639,13.37c-4.335,4.364-10.595,6.868-17.171,6.868
+                                    				c-0.009,0-0.016,0-0.023,0l-111.618,0.007c-0.003,0-0.009,0-0.012,0c-6.103,0-11.857-2.39-16.201-6.731
+                                    				c-4.345-4.342-6.739-10.1-6.739-16.211V209.28c0-10.462-1.488-21.539-2.82-24.938c-1.298-3.306-8.112-11.792-15.816-18.685
+                                    				l-7.295-6.525c-4.738-4.239-7.025-9.701-6.275-14.985c0.752-5.284,4.468-9.894,10.196-12.646l168.449-80.942
+                                    				c10.453-5.023,26.828-5.023,37.279,0l168.45,80.944c5.727,2.751,9.444,7.36,10.198,12.647c0.754,5.286-1.53,10.75-6.262,14.992
+                                    				l-7.386,6.622c-7.699,6.9-14.492,15.357-15.772,18.633c-1.32,3.373-2.792,14.419-2.792,24.881v115.834
+                                    				c0,6.109-2.393,11.867-6.739,16.211C351.423,345.67,345.666,348.062,339.559,348.062z" />
+                                                </g>
+                                                <path
+                                                    d="M277.863,271.145H170.327v-44.589c0-5.302,4.315-9.617,9.617-9.617h50.708c5.302,0,9.617,4.315,9.617,9.617v17.485
+                                    			c0,2.415,1.956,4.372,4.371,4.372s4.371-1.957,4.371-4.372v-17.485c0-10.124-8.235-18.36-18.359-18.36h-50.708
+                                    			c-10.124,0-18.36,8.236-18.36,18.36v44.589h-44.588c-10.125,0-18.36,8.235-18.36,18.359v17.486c0,2.414,1.957,4.371,4.372,4.371
+                                    			c2.415,0,4.372-1.957,4.372-4.371v-17.486c0-5.303,4.313-9.617,9.617-9.617h160.868c5.304,0,9.617,4.314,9.617,9.617v17.486
+                                    			c0,2.414,1.957,4.371,4.372,4.371c2.414,0,4.371-1.957,4.371-4.371v-17.486C296.224,279.38,287.987,271.145,277.863,271.145z" />
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <h3 class="text-lg font-bold xl:text-xl text-white py-5 w-full xl:w-64">
+                                    Enhance efficiency with warehousing tools
+                                </h3>
+                                <p class="text-xs font-normal text-gray-300 w-full mb-8 xl:w-64">Get a detailed quote
+                                    and secure your storage solution effortlessly, tailored to meet your warehousing
+                                    needs! </p>
+                            </div>
+                            <div class="relative hidden h-auto md:w-1/2 md:block">
+                                <img src="https://pagedone.io/asset/uploads/1695028873.png"
+                                    alt="Header tailwind Section" class="h-full ml-auto object-cover">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative w-full h-auto">
+                        <div class="bg-indigo-500 rounded-2xl p-5  xl:p-8 h-full">
+                            <div class="block">
+                                <svg fill="#ffffff" height="40" width="40" version="1.1" id="Layer_1"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    viewBox="0 0 512 512" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <path d="M468.347,61.099v-3.32c0-11.906-9.687-21.593-21.593-21.593h-44.796l-15.052-31.58C385.565,1.793,382.725,0,379.609,0
+                                			h-60.461c-3.117,0-5.956,1.793-7.298,4.606l-15.051,31.579h-26.84c-4.466,0-8.084,3.618-8.084,8.084
+                                			c0,4.466,3.618,8.084,8.084,8.084h31.942h94.954h49.899c2.991,0,5.425,2.434,5.425,5.425v3.32c0,2.991-2.434,5.425-5.425,5.425
+                                			H268.705h-54.294H100.549H70.211h-4.964c-2.991,0-5.425-2.434-5.425-5.425v-3.32c0-2.991,2.434-5.425,5.425-5.425h176.328
+                                			c4.466,0,8.084-3.618,8.084-8.084c0-4.466-3.619-8.084-8.084-8.084H65.246c-11.906,0-21.593,9.687-21.593,21.593v3.32
+                                			c0,10.844,8.044,19.821,18.474,21.342v22.907c0,9.633,6.343,17.809,15.071,20.581v146.644
+                                			c-8.425,3.257-14.427,11.424-14.427,20.983c0,9.369,5.756,17.412,13.915,20.798v14.57c0,4.466,3.619,8.084,8.084,8.084
+                                			c7.838,0,14.215,6.377,14.215,14.215s-6.377,14.216-14.215,14.216c-3.261,0-6.326-1.074-8.866-3.103
+                                			c-3.487-2.791-8.576-2.223-11.362,1.263c-2.79,3.486-2.224,8.574,1.263,11.362c5.358,4.287,12.093,6.646,18.964,6.646
+                                			c16.754,0,30.384-13.631,30.384-30.385c0-13.956-9.456-25.744-22.299-29.293v-7.201c8.692-3.119,14.937-11.42,14.937-21.173
+                                			c0-9.56-6.002-17.726-14.427-20.983V125.991c8.829-2.711,15.267-10.938,15.267-20.644V82.693h102.503l49.484,47.944v47.193
+                                			c0,11.59,9.429,21.019,21.019,21.019h18.021v76.074v84.158v76.073h-22.501c-2.907,0-5.592,1.561-7.029,4.09l-14.921,26.25h-3.206
+                                			c-11.906,0-21.593,9.687-21.593,21.593v3.32c0,11.906,9.687,21.593,21.593,21.593h194.751c11.906,0,21.593-9.687,21.593-21.593
+                                			v-3.32c0-11.906-9.687-21.593-21.593-21.593h-3.207l-14.924-26.251c-1.437-2.528-4.12-4.089-7.028-4.089h-22.501V359.08v-84.158
+                                			v-76.074h18.021c11.59,0,21.019-9.429,21.019-21.019v-16.497v-57.159V87.678c0-1.72-0.231-3.383-0.622-4.985h9.241
+                                			C458.66,82.693,468.347,73.005,468.347,61.099z M314.71,36.185l9.539-20.016h50.257l9.54,20.016H314.71z M85.282,299.902
+                                			c-3.497,0-6.342-2.846-6.342-6.343c0-3.497,2.846-6.341,6.342-6.341c3.497,0,6.342,2.845,6.342,6.341
+                                			C91.624,297.056,88.779,299.902,85.282,299.902z M92.465,105.348c0,2.991-2.434,5.425-5.425,5.425h-3.32
+                                			c-2.991,0-5.425-2.434-5.425-5.425V82.693h14.17C92.465,82.693,92.465,105.348,92.465,105.348z M260.622,87.678v20.446
+                                			l-26.248-25.431h26.248V87.678z M416.893,451.323l8.056,14.17h-15.583c-4.466,0-8.084,3.618-8.084,8.084
+                                			c0,4.466,3.618,8.084,8.084,8.084h29.469c0.005,0,0.011,0.001,0.016,0.001c0.005,0,0.011-0.001,0.016-0.001h7.886
+                                			c2.991,0,5.425,2.434,5.425,5.425v3.32c0,2.991-2.434,5.425-5.425,5.425h-194.75c-2.991,0-5.425-2.434-5.425-5.425v-3.32
+                                			c0-2.991,2.434-5.425,5.425-5.425h7.734c0.015,0,0.03,0,0.045,0h120.481c4.466,0,8.084-3.618,8.084-8.084
+                                			c0-4.466-3.618-8.084-8.084-8.084H273.807l8.055-14.17h25.883h83.265H416.893z M371.64,283.007l-22.262,22.5l-22.262-22.5H371.64z
+                                			 M327.116,266.838l22.262-22.501l22.262,22.501H327.116z M371.64,350.996h-44.523l22.262-22.5L371.64,350.996z M371.64,367.164
+                                			l-22.262,22.5l-22.262-22.5H371.64z M371.64,435.155h-44.523l22.262-22.501L371.64,435.155z M360.75,401.159l22.176-22.414v44.828
+                                			L360.75,401.159z M360.751,317.001l22.175-22.414v44.828L360.751,317.001z M382.925,255.257l-22.176-22.414l22.176-22.414V255.257
+                                			z M349.378,221.349l-22.262-22.501h44.523L349.378,221.349z M338.005,232.844l-22.176,22.414V210.43L338.005,232.844z
+                                			 M338.005,317.001l-22.176,22.414v-44.828L338.005,317.001z M338.005,401.159l-22.176,22.414v-44.828L338.005,401.159z
+                                			 M421.968,96.091h-47.165h-55.251c-4.466,0-8.084,3.618-8.084,8.084v57.158c0,4.466,3.619,8.084,8.084,8.084h55.251h47.165v8.413
+                                			c-0.001,2.674-2.177,4.851-4.852,4.851h-26.106h-0.04c-0.002,0-0.003,0-0.005,0h-83.219h-26.106c-2.674,0-4.851-2.176-4.851-4.851
+                                			v-50.617V87.678c0-2.674,2.176-4.851,4.851-4.851h135.476c2.674,0,4.851,2.176,4.851,4.851V96.091z M421.967,112.26v40.989
+                                			h-39.081V112.26H421.967z M366.717,112.26v40.989h-39.082V112.26H366.717z" />
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <h3 class="py-5 text-white text-lg font-bold xl:text-xl">Advanced cranes deliver greater
+                                value</h3>
+                            <p class="text-xs font-normal text-white mb-8">Our advanced crane technology ensures faster,
+                                efficient service with cranes ranging from <span class="text-lg">20</span> to <span
+                                    class="text-lg">200</span> tons available.</p>
+                        </div>
+                    </div>
+                    <div class="relative w-full h-auto">
+                        <div class="bg-violet-500 rounded-2xl p-5 xl:p-8 h-full">
+                            <div class="block">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M26.7301 15.661C26.7301 22.1995 21.306 27.5 14.6151 27.5C7.9241 27.5 2.5 22.1995 2.5 15.661C2.5 9.1225 7.9241 3.822 14.6151 3.822M18.1313 10.1507L18.1313 4.85383C18.1313 3.22503 19.6455 2.00299 21.1519 2.70013C23.7608 3.90751 26.6177 6.25557 27.456 10.2563C27.7542 11.6798 26.4931 12.8563 25.0064 12.8368L20.7873 12.7814C19.3147 12.762 18.1313 11.5899 18.1313 10.1507Z"
+                                        stroke="white" stroke-width="2" stroke-linecap="round"></path>
+                                </svg>
+
+                            </div>
+                            <h3 class="py-5 text-white text-lg font-bold xl:text-xl">Top-quality services at competitive
+                                prices</h3>
+                            <p class="text-xs font-normal text-white mb-8">Experience reliable and efficient solutions
+                                tailored to meet your needs, ensuring the best value for your investment. </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="Services"
+            class="min-h-screen text-black text-center pt-20 px-8 xl:px-0 flex flex-col justify-center">
+            <span class="text-lg max-w-lg mx-auto mb-2 capitalize flex items-center">what we're offering
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="text-indigo-600 ml-3 w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                </svg>
+            </span>
+            <h1 class=" text-3xl md:text-4xl xl:text-5xl font-semibold max-w-4xl mx-auto mb-16 leading-snug">
+                Tailored Solutions for Your Warehousing and Crane Needs</h1>
+            <div class="pb-8 grid-offer text-left grid sm:grid-cols-2 md:grid-cols-2 gap-5 max-w-5xl mx-auto">
+                <div class="card bg-gray-800 p-10 relative">
+                    <div class="circle">
+                    </div>
+                    <div class="relative lg:pr-52">
+                        <h2 class="capitalize text-white mb-4 text-2xl xl:text-3xl">Warehouses</h2>
+                        <p class="text-gray-400">Our warehouses offer secure storage, efficient management, and swift
+                            dispatch tailored to your needs.</p>
+                    </div>
+                    <div class="icon"></div>
+                </div>
+                <div class="card bg-gray-800 p-10 relative">
+                    <div class="circle">
+                    </div>
+                    <div class="relative lg:pl-48">
+                        <h2 class="capitalize text-white mb-4 text-2xl xl:text-3xl">Cranes</h2>
+                        <p class="text-gray-400">Our crane services offer safe, reliable lifting solutions with skilled
+                            operators, advanced equipment, and exceptional
+                            precision.</p>
+                    </div>
+                </div>
+                <div class="card bg-gray-800 p-10 relative">
+                    <div class="circle">
+                    </div>
+                    <div class="relative lg:pr-44">
+                        <h2 class="capitalize text-white mb-4 text-2xl xl:text-3xl">Pricing </h2>
+                        <p class="text-gray-400">Our pricing provides transparent, competitive rates with flexible
+                            options, ensuring cost-effective solutions tailored to
+                            your unique needs and requirements.</p>
+                    </div>
+                </div>
+                <div class="card bg-gray-800 p-10 relative">
+                    <div class="circle">
+                    </div>
+                    <div class="relative lg:pl-48">
+                        <h2 class="capitalize text-white mb-4 text-2xl xl:text-3xl">Services</h2>
+                        <p class="text-gray-400">Our services provide tailored solutions with a focus on efficiency,
+                            reliability, quality, innovation, and customer
+                            satisfaction.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 check">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="mb-14 text-center">
+                    <span
+                        class="py-1 px-4 bg-indigo-100 rounded-full text-xs font-medium text-indigo-600 text-center">Features</span>
+                    <h2 class="text-4xl text-center font-bold text-gray-900 py-5">
+                        Revolutionary Features
+                    </h2>
+                    <p class="text-lg font-normal text-gray-500 max-w-md md:max-w-2xl mx-auto">
+                        Tailored to suit your needs.
+                    </p>
+                </div>
+                <div
+                    class="flex justify-center items-center gap-x-5 gap-y-8 lg:gap-y-0 flex-wrap md:flex-wrap lg:flex-nowrap lg:flex-row lg:justify-between lg:gap-x-8">
+                    <div class="relative w-full text-center max-md:max-w-sm max-md:mx-auto group md:w-2/5 lg:w-1/4">
+                        <div
+                            class="bg-indigo-100 rounded-lg flex justify-center items-center mb-5 w-20 h-20 mx-auto cursor-pointer transition-all duration-500 group-hover:bg-indigo-600">
+                            <svg class="stroke-indigo-900 transition-all duration-500 group-hover:stroke-white"
+                                version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40"
+                                viewBox="0 0 394.854 394.854" xml:space="preserve">
+                                <g>
+                                    <g>
+                                        <g>
+                                            <path stroke="" stroke-width="10"
+                                                d="M339.559,348.062h-0.004l-111.623-0.046c-6.651-0.007-12.966-2.52-17.325-6.896c-3.612-3.623-5.592-8.26-5.58-13.053
+                                                                    				l0.044-15.55c0.007-2.41,1.964-4.357,4.372-4.357c0.003,0,0.008,0,0.012,0c2.415,0.007,4.366,1.971,4.359,4.385l-0.044,15.547
+                                                                    				c-0.009,3.147,1.644,5.468,3.028,6.859c2.735,2.744,6.794,4.319,11.139,4.324l111.618,0.046h0.002
+                                                                    				c3.771,0,7.333-1.483,10.026-4.176c2.692-2.694,4.178-6.257,4.178-10.03V209.281c0-9.536,1.27-22.644,3.392-28.068
+                                                                    				c2.252-5.752,10.995-15.605,18.079-21.955l7.386-6.621c2.56-2.293,3.78-4.868,3.442-7.252c-0.339-2.38-2.23-4.511-5.327-5.999
+                                                                    				L212.28,58.439c-8.051-3.866-21.656-3.866-29.705,0l-168.45,80.944c-3.097,1.488-4.987,3.616-5.326,5.996
+                                                                    				c-0.336,2.378,0.886,4.95,3.448,7.241l7.295,6.523c7.09,6.342,15.851,16.209,18.125,22.006
+                                                                    				c2.146,5.459,3.425,18.591,3.425,28.131v115.834c0,3.773,1.485,7.336,4.178,10.026c2.691,2.689,6.249,4.173,10.019,4.173
+                                                                    				c0.003,0,0.005,0,0.009,0l111.624-0.008c0.005,0,0.011,0,0.014,0c4.27,0,8.269-1.561,10.974-4.285
+                                                                    				c1.427-1.436,3.123-3.842,3.097-7.14l-0.121-15.844c-0.02-2.415,1.923-4.387,4.336-4.406c0.012,0,0.024,0,0.035,0
+                                                                    				c2.399,0,4.352,1.934,4.372,4.336l0.121,15.844c0.037,4.925-1.965,9.67-5.639,13.37c-4.335,4.364-10.595,6.868-17.171,6.868
+                                                                    				c-0.009,0-0.016,0-0.023,0l-111.618,0.007c-0.003,0-0.009,0-0.012,0c-6.103,0-11.857-2.39-16.201-6.731
+                                                                    				c-4.345-4.342-6.739-10.1-6.739-16.211V209.28c0-10.462-1.488-21.539-2.82-24.938c-1.298-3.306-8.112-11.792-15.816-18.685
+                                                                    				l-7.295-6.525c-4.738-4.239-7.025-9.701-6.275-14.985c0.752-5.284,4.468-9.894,10.196-12.646l168.449-80.942
+                                                                    				c10.453-5.023,26.828-5.023,37.279,0l168.45,80.944c5.727,2.751,9.444,7.36,10.198,12.647c0.754,5.286-1.53,10.75-6.262,14.992
+                                                                    				l-7.386,6.622c-7.699,6.9-14.492,15.357-15.772,18.633c-1.32,3.373-2.792,14.419-2.792,24.881v115.834
+                                                                    				c0,6.109-2.393,11.867-6.739,16.211C351.423,345.67,345.666,348.062,339.559,348.062z" />
+                                        </g>
+                                        <path stroke="" stroke-width="10"
+                                            d="M277.863,271.145H170.327v-44.589c0-5.302,4.315-9.617,9.617-9.617h50.708c5.302,0,9.617,4.315,9.617,9.617v17.485
+                                                                    			c0,2.415,1.956,4.372,4.371,4.372s4.371-1.957,4.371-4.372v-17.485c0-10.124-8.235-18.36-18.359-18.36h-50.708
+                                                                    			c-10.124,0-18.36,8.236-18.36,18.36v44.589h-44.588c-10.125,0-18.36,8.235-18.36,18.359v17.486c0,2.414,1.957,4.371,4.372,4.371
+                                                                    			c2.415,0,4.372-1.957,4.372-4.371v-17.486c0-5.303,4.313-9.617,9.617-9.617h160.868c5.304,0,9.617,4.314,9.617,9.617v17.486
+                                                                    			c0,2.414,1.957,4.371,4.372,4.371c2.414,0,4.371-1.957,4.371-4.371v-17.486C296.224,279.38,287.987,271.145,277.863,271.145z" />
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <h4 class="text-lg font-medium text-gray-900 mb-3 capitalize">
+                            Sq. Ft. Based Pricing
+                        </h4>
+                        <p class="text-sm font-normal text-gray-500">
+                            Pay only for the space you use; our pricing is based on the square footage you need.
+                        </p>
+                    </div>
+                    <div class="relative w-full text-center max-md:max-w-sm max-md:mx-auto group md:w-2/5 lg:w-1/4">
+                        <div
+                            class="bg-pink-100 rounded-lg flex justify-center items-center mb-5 w-20 h-20 mx-auto cursor-pointer transition-all duration-500 group-hover:bg-pink-600">
+                            <svg fill="#ffffff"
+                                class="stroke-pink-600 transition-all duration-500 group-hover:stroke-white" height="40"
+                                width="40" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve">
+                                <g transform="translate(1 1)">
+                                    <g>
+                                        <g>
+                                            <path stroke="" stroke-width="14" d="M229.4,280.6c-5.12,0-8.533,3.413-8.533,8.533V459.8c0,5.12,3.413,8.533,8.533,8.533s8.533-3.413,8.533-8.533V289.133
+                                				C237.933,284.013,234.52,280.6,229.4,280.6z" />
+                                            <path stroke="" stroke-width="14" d="M178.2,280.6c-5.12,0-8.533,3.413-8.533,8.533V459.8c0,5.12,3.413,8.533,8.533,8.533s8.533-3.413,8.533-8.533V289.133
+                                				C186.733,284.013,183.32,280.6,178.2,280.6z" />
+                                            <path stroke="" stroke-width="14" d="M127,280.6c-5.12,0-8.533,3.413-8.533,8.533V459.8c0,5.12,3.413,8.533,8.533,8.533s8.533-3.413,8.533-8.533V289.133
+                                				C135.533,284.013,132.12,280.6,127,280.6z" />
+                                            <path stroke="" stroke-width="14" d="M75.8,280.6c-5.12,0-8.533,3.413-8.533,8.533V459.8c0,5.12,3.413,8.533,8.533,8.533s8.533-3.413,8.533-8.533V289.133
+                                				C84.333,284.013,80.92,280.6,75.8,280.6z" />
+                                            <path stroke="" stroke-width="14" d="M434.2,280.6c-5.12,0-8.533,3.413-8.533,8.533V459.8c0,5.12,3.413,8.533,8.533,8.533s8.533-3.413,8.533-8.533V289.133
+                                				C442.733,284.013,439.32,280.6,434.2,280.6z" />
+                                            <path stroke="" stroke-width="14" d="M383,280.6c-5.12,0-8.533,3.413-8.533,8.533V459.8c0,5.12,3.413,8.533,8.533,8.533s8.533-3.413,8.533-8.533V289.133
+                                				C391.533,284.013,388.12,280.6,383,280.6z" />
+                                            <path stroke="" stroke-width="14" d="M331.8,280.6c-5.12,0-8.533,3.413-8.533,8.533V459.8c0,5.12,3.413,8.533,8.533,8.533c5.12,0,8.533-3.413,8.533-8.533
+                                				V289.133C340.333,284.013,336.92,280.6,331.8,280.6z" />
+                                            <path stroke="" stroke-width="14" d="M280.6,280.6c-5.12,0-8.533,3.413-8.533,8.533V459.8c0,5.12,3.413,8.533,8.533,8.533s8.533-3.413,8.533-8.533V289.133
+                                				C289.133,284.013,285.72,280.6,280.6,280.6z" />
+                                            <path stroke="" stroke-width="14" d="M499.907,286.573C506.733,279.747,511,270.36,511,260.12v-13.653c0-5.12-3.413-8.533-8.533-8.533h-23.04l-158.72-63.147
+                                				c-4.267-1.707-9.387,0.853-11.093,5.12s0.853,9.387,5.12,11.093l117.968,46.933H80.323l146.756-54.354
+                                				c7.434,12.211,20.85,20.221,36.455,20.221c23.893,0,42.667-18.773,42.667-42.667c0-20.48-14.507-37.547-34.133-41.813v-10.212
+                                				c19.681-3.86,34.133-20.878,34.133-41.841V7.533c0-5.12-3.413-8.533-8.533-8.533s-8.533,3.413-8.533,8.533V32.93
+                                				c-7.09-5.25-15.924-8.33-25.6-8.33s-18.51,3.08-25.6,8.33V7.533c0-5.12-3.413-8.533-8.533-8.533s-8.533,3.413-8.533,8.533v59.733
+                                				c0,20.963,14.452,37.981,34.133,41.841V127c0,5.12,3.413,8.533,8.533,8.533c14.507,0,25.6,11.093,25.6,25.6
+                                				c0,14.507-11.093,25.6-25.6,25.6c-8.208,0-15.322-3.554-19.953-9.266l19.822-7.341l5.251,2.101
+                                				c1.707,0.853,2.56,0.853,3.413,0.853c3.413,0,6.827-1.707,7.68-5.973c1.707-4.267-0.853-9.387-5.12-11.093l-5.853-2.341
+                                				c-1.514-1.04-3.317-1.628-5.125-1.597c-0.037-0.002-0.075,0-0.112-0.001c-0.04,0.001-0.08-0.001-0.12,0.001
+                                				c-1.697-0.029-3.387,0.489-4.841,1.413l-20.643,7.646c0-5.12-3.413-8.533-8.533-8.533s-8.533,3.413-8.533,8.533
+                                				c0,2.097,0.153,4.152,0.433,6.161L30.573,237.933H7.533c-5.12,0-8.533,3.413-8.533,8.533v13.653
+                                				c0,10.24,4.267,19.627,11.093,26.453c3.413,3.413,5.973,9.387,5.973,14.507v146.773c0,5.973-2.56,10.24-5.973,14.507
+                                				C3.267,469.187-1,478.573-1,488.813v13.653c0,5.12,3.413,8.533,8.533,8.533h494.933c5.12,0,8.533-3.413,8.533-8.533v-13.653
+                                				c0-10.24-4.267-19.627-11.093-26.453c-4.267-4.267-5.973-9.387-5.973-14.507V301.08
+                                				C493.933,295.107,496.493,290.84,499.907,286.573z M237.933,67.267c0-14.507,11.093-25.6,25.6-25.6
+                                				c14.507,0,25.6,11.093,25.6,25.6s-11.093,25.6-25.6,25.6C249.027,92.867,237.933,81.773,237.933,67.267z M487.96,474.307
+                                				c4.267,4.267,5.973,9.387,5.973,14.507v5.12H16.067v-5.12c0-5.973,2.56-10.24,5.973-14.507
+                                				c6.827-6.827,11.093-16.213,11.093-26.453V301.08c0-9.387-4.267-19.627-11.093-26.453c-3.413-4.267-5.973-9.387-5.973-14.507V255
+                                				h477.867v5.12c0,5.12-2.56,10.24-5.973,14.507c-6.827,6.827-11.093,16.213-11.093,26.453v146.773
+                                				C476.867,458.093,481.133,467.48,487.96,474.307z" />
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <h4 class="text-lg font-medium text-gray-900 mb-3 capitalize">
+                            Container Based Pricing
+                        </h4>
+                        <p class="text-sm font-normal text-gray-500">
+                            Pay based on container size for flexible and cost-effective storage solutions.
+                        </p>
+                    </div>
+                    <div class="relative w-full text-center max-md:max-w-sm max-md:mx-auto group md:w-2/5 lg:w-1/4">
+                        <div
+                            class="bg-teal-50 rounded-lg flex justify-center items-center mb-5 w-20 h-20 mx-auto cursor-pointer transition-all duration-500 group-hover:bg-teal-600">
+                            <svg class="stroke-teal-600 transition-all duration-500 group-hover:stroke-white"
+                                fill="#ffffff" height="40" width="40" version="1.1" id="Layer_1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                viewBox="0 0 512.898 512.898" xml:space="preserve">
+                                <g transform="translate(1 1)">
+                                    <g>
+                                        <g>
+                                            <path stroke="" stroke-width="10" d="M88.825,381.204c-9.881,0-17.965,8.084-17.965,17.965s8.084,17.965,17.965,17.965c9.881,0,17.965-8.084,17.965-17.965
+                                				S98.705,381.204,88.825,381.204z" />
+                                            <path stroke="" stroke-width="10" d="M403.211,381.204c-9.881,0-17.965,8.084-17.965,17.965s8.084,17.965,17.965,17.965c9.881,0,17.965-8.084,17.965-17.965
+                                				S413.091,381.204,403.211,381.204z" />
+                                            <path stroke="" stroke-width="10" d="M503.814,234.789l-78.147-86.232c-6.288-6.288-14.372-9.881-22.456-9.881h-47.607h-35.032
+                                				c-14.372,0-25.151,11.677-25.151,25.151v70.727L104.095,51.547c-1.797-1.797-3.593-2.695-6.288-2.695H34.93
+                                				c-5.1,0-8.587,3.221-8.947,8.133c-0.078,0.581-0.087,1.156-0.036,1.72v70.988c0,5.389,3.593,8.982,8.982,8.982
+                                				c9.881,0,17.965,8.084,17.965,17.965c0,9.881-8.084,17.965-17.965,17.965c-9.881,0-17.965-8.084-17.965-17.965
+                                				c0-5.389-3.593-8.982-8.982-8.982c-5.39,0-8.982,3.593-8.982,8.982c0,19.761,16.168,35.93,35.93,35.93s35.93-16.168,35.93-35.93
+                                				c0-16.663-11.496-30.77-26.947-34.785V79.959l212.531,220.403H-1v86.232c0,11.677,9.881,21.558,21.558,21.558h6.024
+                                				c4.289,30.689,30.266,53.895,62.243,53.895c31.977,0,57.954-23.205,62.243-53.895h189.9
+                                				c4.289,30.689,30.266,53.895,62.243,53.895c31.977,0,57.954-23.205,62.243-53.895h23.989c11.677,0,21.558-9.881,22.456-20.66
+                                				v-123.06v-8.982C511.898,247.365,509.203,240.179,503.814,234.789z M403.211,156.642c3.593,0,6.288,0.898,8.982,3.593
+                                				l77.249,86.232H358.298v-89.825H403.211z M56.488,66.818h37.726l201.207,192.225v41.319h-14.372L56.488,66.818z M88.825,444.081
+                                				c-25.151,0-44.912-19.761-44.912-44.912s19.761-44.912,44.912-44.912s44.912,19.761,44.912,44.912
+                                				S113.975,444.081,88.825,444.081z M403.211,444.081c-25.151,0-44.912-19.761-44.912-44.912s19.761-44.912,44.912-44.912
+                                				s44.912,19.761,44.912,44.912S428.361,444.081,403.211,444.081z M489.442,390.186h-23.989
+                                				c-4.289-30.689-30.266-53.895-62.243-53.895c-0.146,0-0.288,0.01-0.434,0.011c-0.155-0.001-0.309-0.011-0.465-0.011
+                                				c-31.439,0-57.488,23.354-61.979,53.895H151.068c-4.022-28.778-27.117-50.964-56.346-53.617c-0.212-0.02-0.427-0.03-0.641-0.048
+                                				c-0.737-0.06-1.474-0.12-2.219-0.155c-1.007-0.048-2.019-0.075-3.038-0.075s-2.031,0.027-3.038,0.075
+                                				c-0.745,0.034-1.482,0.095-2.219,0.155c-0.213,0.018-0.428,0.028-0.641,0.048c-29.229,2.653-52.324,24.839-56.346,53.617h-6.024
+                                				c-1.797,0-3.593-1.796-3.593-3.593v-68.267h260.491h26.947h8.982v-8.982v-53.895v-91.621c0-4.491,3.593-7.186,7.186-7.186h19.761
+                                				v92.519c0,8.084,7.186,15.27,15.27,15.27h137.432v26.947h-44.912c-5.389,0-8.982,3.593-8.982,8.982s3.593,8.982,8.982,8.982
+                                				h44.912v77.249C493.035,388.389,491.239,390.186,489.442,390.186z" />
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <h4 class="text-lg font-medium text-gray-900 mb-3 capitalize">
+                            Contract-Based Service
+                        </h4>
+                        <p class="text-sm font-normal text-gray-500">
+                            Get reliable cranes on contract, tailored to your needs with expert support.
+                        </p>
+                    </div>
+                    <div class="relative w-full text-center max-md:max-w-sm max-md:mx-auto group md:w-2/5 lg:w-1/4">
+                        <div
+                            class="bg-orange-50 rounded-lg flex justify-center items-center mb-5 w-20 h-20 mx-auto cursor-pointer transition-all duration-500 group-hover:bg-orange-600">
+                            <svg class="stroke-orange-600 transition-all duration-500 group-hover:stroke-white"
+                                fill="#ffffff" height="40" width="40" version="1.1" id="Layer_1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                viewBox="0 0 512 512" xml:space="preserve">
+                                <g transform="translate(1 1)">
+                                    <g>
+                                        <g>
+                                            <path stroke="" stroke-width="10" d="M447,334.543c-3.831-21.889-16.182-39.84-33.319-50.731L145.11,49.695C142.963,21.451,119.199-1,90.429-1
+                                				C60.257-1,35.571,23.686,35.571,53.857c0,27.057,19.857,49.688,45.714,54.075v73.925c0,5.486,3.657,9.143,9.143,9.143
+                                				C110.543,191,127,207.457,127,227.571c0,20.114-16.457,36.571-36.571,36.571c-20.114,0-36.571-16.457-36.571-36.571
+                                				c0-5.486-3.657-9.143-9.143-9.143s-9.143,3.657-9.143,9.143c0,30.171,24.686,54.857,54.857,54.857
+                                				c30.171,0,54.857-24.686,54.857-54.857c0-27.057-19.857-49.688-45.714-54.075v-56.952l199.505,227.882l-25.79,155.601
+                                				c0,2.743,0,5.486,1.829,7.314c1.829,2.743,4.571,3.657,7.314,3.657h182.857c2.743,0,5.486-0.914,7.314-3.657
+                                				c1.829-1.829,1.829-4.571,1.829-7.314L447,334.543z M53.857,53.857c0-20.114,16.457-36.571,36.571-36.571
+                                				c20.114,0,36.571,16.457,36.571,36.571c0,0.599-0.017,1.195-0.046,1.787c-0.011,0.234-0.033,0.466-0.049,0.699
+                                				c-0.024,0.351-0.047,0.702-0.081,1.051c-0.029,0.301-0.068,0.599-0.105,0.897c-0.033,0.271-0.065,0.543-0.104,0.812
+                                				c-0.051,0.347-0.11,0.692-0.171,1.036c-0.036,0.208-0.072,0.415-0.112,0.622c-0.076,0.393-0.16,0.784-0.249,1.172
+                                				c-0.032,0.142-0.065,0.284-0.099,0.426c-0.108,0.444-0.222,0.886-0.346,1.324c-0.018,0.064-0.037,0.129-0.055,0.193
+                                				C121.639,77.538,109.822,88.032,95,89.514c-0.639,0.213-1.277,0.482-1.905,0.806c-0.882,0.064-1.769,0.109-2.667,0.109
+                                				C70.314,90.429,53.857,73.971,53.857,53.857z M142.543,71.229l229.283,201.189c-31.324,0.846-57.643,21.152-67.832,49.808
+                                				L113.286,104.143C127,97.743,137.971,85.857,142.543,71.229z M293.4,492.714L319,338.2c4.571-27.429,27.429-46.629,54.857-46.629
+                                				c0.813,0,1.621,0.021,2.425,0.055c11.872,0.536,22.841,4.98,31.404,11.83c0.462,0.346,0.953,0.648,1.466,0.905
+                                				c10.084,8.379,17.223,20.265,19.563,33.838l25.6,154.514H293.4z" />
+                                            <path stroke="" stroke-width="10" d="M373.857,309.857c-20.114,0-36.571,16.457-36.571,36.571S353.743,383,373.857,383c20.114,0,36.571-16.457,36.571-36.571
+                                				S393.971,309.857,373.857,309.857z M373.857,364.714c-10.057,0-18.286-8.229-18.286-18.286s8.229-18.286,18.286-18.286
+                                				s18.286,8.229,18.286,18.286S383.914,364.714,373.857,364.714z" />
+                                            <path stroke="" stroke-width="10"
+                                                d="M108.714,53.857c0-10.057-8.229-18.286-18.286-18.286c-10.057,0-18.286,8.229-18.286,18.286
+                                				c0,10.057,8.229,18.286,18.286,18.286C100.486,72.143,108.714,63.914,108.714,53.857z" />
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <h4 class="text-lg font-medium text-gray-900 mb-3 capitalize">
+                            Time Based Service
+                        </h4>
+                        <p class="text-sm font-normal text-gray-500">
+                            Rent cranes by the hour for adaptable, budget-friendly lifting solutions with expert
+                            assistance.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class=" py-24 relative">
+            <div class="w-full max-w-7xl px-4 md:px-5 lg:px-5 mx-auto">
+                <div class="w-full justify-start items-center gap-12 grid lg:grid-cols-2 grid-cols-1">
+                    <div
+                        class="w-full justify-center items-start gap-6 grid sm:grid-cols-2 grid-cols-1 lg:order-first order-last">
+                        <div class="pt-24 lg:justify-center sm:justify-end justify-start items-start gap-2.5 flex">
+                            <img class=" rounded-xl object-cover" src="https://pagedone.io/asset/uploads/1717741205.png"
+                                alt="about Us image" />
+                        </div>
+                        <img class="sm:ml-0 ml-auto rounded-xl object-cover"
+                            src="https://pagedone.io/asset/uploads/1717741215.png" alt="about Us image" />
+                    </div>
+                    <div class="w-full flex-col justify-center lg:items-start items-center gap-10 inline-flex">
+                        <div class="w-full flex-col justify-center items-start gap-8 flex">
+                            <div class="w-full flex-col justify-start lg:items-start items-center gap-3 flex">
+                                <h2
+                                    class="text-gray-900 text-4xl font-bold font-manrope leading-normal lg:text-start text-center">
+                                    Empowering Each Other to Succeed</h2>
+                                <p
+                                    class="text-gray-500 text-base font-normal leading-relaxed lg:text-start text-center">
+                                    Every project we've undertaken has been a collaborative effort, where every
+                                    person
+                                    involved has left their mark. Together, we've not only managed warehouses
+                                    but also forged lasting partnerships that drive our success story.</p>
+                            </div>
+                            <div
+                                class="w-full lg:justify-start justify-center items-center sm:gap-10 gap-5 inline-flex">
+                                <div class="flex-col justify-start items-start inline-flex">
+                                    <h3 class="text-gray-900 text-4xl font-bold font-manrope leading-normal">30+
+                                    </h3>
+                                    <h6 class="text-gray-500 text-base font-normal leading-relaxed">Years of
+                                        Experience</h6>
+                                </div>
+                                <div class="flex-col justify-start items-start inline-flex">
+                                    <h4 class="text-gray-900 text-4xl font-bold font-manrope leading-normal">
+                                        1K+</h4>
+                                    <h6 class="text-gray-500 text-base font-normal leading-relaxed">Successful
+                                        Projects</h6>
+                                </div>
+                                <div class="flex-col justify-start items-start inline-flex">
+                                    <h4 class="text-gray-900 text-4xl font-bold font-manrope leading-normal">
+                                        100+
+                                    </h4>
+                                    <h6 class="text-gray-500 text-base font-normal leading-relaxed">Happy
+                                        Clients</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <button
+                                    class="sm:w-fit w-full px-3.5 py-2 bg-indigo-600 hover:bg-indigo-800 transition-all duration-700 ease-in-out rounded-lg shadow-[0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] justify-center items-center flex">
+                                    <span class="px-1.5 text-white text-sm font-medium leading-6">Read More</span>
+                                </button> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="w-5/6 h-[3px] bg-gray-300 mx-auto my-10"></div>
+        <section class="pt-24 pb-0 mb-0 bg-gray-800 pb-2 text-white">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="md:flex gap-x-24 clear-left md:mb-16 mb-10">
+                    <div class=" md:mb-0 mb-4">
+                        <h2
+                            class="text-white font-manrope text-4xl font-semibold leading-10 mb-5 md:text-left text-center">
+                            Get
+                            In Touch</h2>
+                        <p class="text-gray-400 text-lg font-normal leading-7 mb-7 md:text-left text-center">
+                            Whether you have a
+                            concern or simply want to say hello, We are here to facilitate communication with
+                            you.</p>
+                        <div class="flex md:items-center md:justify-start justify-center">
+                            <a href="tel:9038723213">
+                                <button
+                                    class="w-36 h-12 rounded-full bg-indigo-600 transition-all duration-700 hover:bg-indigo-800 shadow text-white text-center text-base font-semibold leading-6">Contact
+                                    Us</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="border-l-2 md:border-indigo-600 border-white px-10 py-6">
+                        <div class="mb-8">
+                            <h6 class="text-gray-400 text-sm font-medium leading-5 pb-3 md:text-start text-center">
+                                Email Address
+                            </h6>
+                            <div class="flex flex-wrap justify-center md:justify-start">
+                                <h3 class="text-lg text-gray-300 font-semibold leading-8 md:text-start text-center">
+                                    singhenterprise.kol1@gmail.com
+                                </h3>
+                                <h3 class="text-gray-300 text-lg font-semibold leading-8 md:text-start text-center">
+                                    thesinghenterprisekol@gmail.com
+                                </h3>
+                            </div>
+                        </div>
+                        <div>
+                            <h6 class="text-gray-400 text-sm font-medium leading-5 pb-3 md:text-start text-center">
+                                Phone Number
+                            </h6>
+                            <div class="flex flex-wrap justify-center md:justify-start">
+                                <h3
+                                    class="text-gray-300 text-lg font-semibold leading-8 md:text-start text-center border-r-2 border-slate-400 pr-2">
+                                    +91 70032 96110
+                                </h3>
+                                <h3 class="pl-2 text-gray-300text-lg font-semibold leading-8 md:text-start text-center">
+                                    +91 9038723213
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-8">
+                        <div class="h-96 relative flex justify-center">
+                            <div class="w-full h-full absolute bg-gradient-to-t from-gray-800/50 to-gray-600/50">
+                            </div>
+                            <img src="https://pagedone.io/asset/uploads/1696246502.png" alt="United Kingdom image"
+                                class="w-full h-full object-cover">
+                            <div class="absolute bottom-0 mb-6 text-center px-6">
+                                <h5 class="text-white text-lg font-semibold leading-7 mb-2">United Kingdom</h5>
+                                <p class="text-white text-base font-medium leading-6">123 High Street, Westminster,
+                                    London</p>
+                            </div>
+                        </div>
+                        <div class="h-96 relative flex justify-center">
+                            <div class="w-full h-full absolute bg-gradient-to-t from-gray-800/50 to-gray-600/50">
+                            </div>
+                            <img src="https://pagedone.io/asset/uploads/1696246522.png" alt="Germany image"
+                                class="w-full h-full  object-cover">
+                            <div class="absolute bottom-0 mb-6 text-center px-6">
+                                <h5 class="text-white text-lg font-semibold leading-7 mb-2">Germany</h5>
+                                <p class="text-white text-base font-medium leading-6">101 Unter den Linden, Mitte
+                                    <br>District,
+                                    Berlin
+                                </p>
+                            </div>
+                        </div>
+                        <div class="h-96 relative flex justify-center">
+                            <div class="w-full h-full absolute bg-gradient-to-t from-gray-800/50 to-gray-600/50">
+                            </div>
+                            <img src="https://pagedone.io/asset/uploads/1696246551.png" alt="France image"
+                                class="w-full h-full  object-cover">
+                            <div class="absolute bottom-0 mb-6 text-center px-6">
+                                <h5 class="text-white text-lg font-semibold leading-7 mb-2">France</h5>
+                                <p class="text-white text-base font-medium leading-6">456 Rue de la Paix, 8th
+                                    Arrondissement, Paris
+                                </p>
+                            </div>
+                        </div>
+                        <div class="h-96 relative flex justify-center">
+                            <div class="w-full h-full absolute bg-gradient-to-t from-gray-800/50 to-gray-600/50">
+                            </div>
+                            <img src="https://pagedone.io/asset/uploads/1696246565.png" alt="Switzerland image"
+                                class="w-full h-full  object-cover">
+                            <div class="absolute bottom-0 mb-6 text-center px-6">
+                                <h5 class="text-white text-lg font-semibold leading-7 mb-2">Switzerland</h5>
+                                <p class="text-white text-base font-medium leading-6">987 Bahnhofstrasse, Zurich
+                                    <br> City Center,
+                                    Zurich
+                                </p>
+                            </div>
+                        </div>
+                    </div> -->
+            </div>
+        </section>
+        <div
+            class="mx-auto w-2/3 h-96 relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg">
+            <div class="text-center mx-3 mb-0 border-b border-slate-200 pt-3 pb-2 px-1">
+                <span class="text-sm text-slate-600 font-medium">
+                    Singh Enterprise <br>
+                    D-1, 2 Hide Road, Kolkata, West Bengal, 700043, India
+                </span>
+            </div>
+
+            <div class="p-4 h-full w-full">
+                <iframe class="mx-auto h-full w-full"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d921.3149981074943!2d88.30787612847273!3d22.53193143744801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0279f27772a943%3A0x87bdc79a382eecf4!2sSingh%20Enterprise!5e0!3m2!1sen!2sin!4v1737569191922!5m2!1sen!2sin"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
-        <div class="mx-auto flex flex-col justify-center items-center">
-            <h2 class="mx-auto text-center w-fit cinzel text-sm lg:text-2xl md:text-lg">Contact Us: +91 9038723213, +91
-                70032 96110</h2>
-        </div>
-    </div>
+        <div class="w-5/6 h-[3px] bg-gray-300 mx-auto my-10"></div>
+        <footer class="bg-white rounded-lg shadow-custom m-4 ">
+            <div
+                class="w-full flex-wrap items-center justify-center mx-auto max-w-screen-xl p-4 md:flex md:items-evenly md:justify-between">
+                <span class="text-sm text-gray-700 sm:text-center">© 2025 <a href=""
+                        class="hover:underline">The Singh Enterprise</a>. All Rights Reserved.
+                </span>
+                <ul
+                    class="flex flex-wrap items-center justify-center mt-3 text-sm font-medium text-gray-700 sm:mt-2">
+                    <li>
+                        <a href="./index.html" class="hover:underline me-4 md:me-6">Home</a>
+                    </li>
+                    <li>
+                        <a href="contact-us.html" class="hover:underline me-4 md:me-6">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+
+    </main>
+    <script src="script.js"></script>
 </body>
 
 </html>

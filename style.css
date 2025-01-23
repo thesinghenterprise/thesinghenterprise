@@ -1,13 +1,148 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&display=swap");
 
-.cinzel {
-  font-family: "Cinzel", serif;
+@media screen and (min-width: 62.5rem) {
+  .circle {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+}
+*{
+  scroll-behavior: smooth;
+}
+.shadow-custom{
+  box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.3);
+}
+.check {
+  --c: rgba(220, 220, 220, 0.322); /* grid lines */
+  --d: 1em; /* grid cell size */
+  --l: 1px; /* line thickness */
+
+  /* computed value */
+  --o: calc(0.5 * var(--l));
+  box-shadow: 0px 0px 100px 10px rgba(0, 0, 0, 0.2) inset;
+  background: 
+    /* horizontal and vertical lines */
+    conic-gradient(from 90deg at var(--l) var(--l), 
+        transparent 25%, var(--c) 0%) 
+      calc(-1 * var(--o)) calc(-1 * var(--o)) / var(--d) var(--d), 
+
+    /* main diagonal */
+    linear-gradient(45deg, 
+        transparent calc(50% + calc(-1 * var(--o))), 
+        var(--c) 0 calc(50% + var(--o)), transparent 0) 
+      0 0 / calc(2 * var(--d)) calc(2 * var(--d)), 
+
+    /* secondary diagonal */
+    linear-gradient(-45deg, 
+        transparent calc(50% + calc(-1 * var(--o))), 
+        var(--c) 0 calc(50% + var(--o)), transparent 0) 
+      0 0 / calc(2 * var(--d)) calc(2 * var(--d));
 }
 
-.grad-bg {
-  background: #121fcf;
-  background: linear-gradient(to right, #9845e8 0%, #33d2ff 50%, #dd5789 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.wave {
+  background-image: 
+    repeating-radial-gradient(
+      circle at 0 0, 
+      transparent 0,
+      #eee 10px
+    ),
+    repeating-linear-gradient(
+      #cccccc9d,
+      #77777752
+    );
+}
+
+h2 {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.card {
+  position: relative;
+}
+
+.card::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  transition: 0.6s;
+  z-index: 0;
+  background-color: #4f46e5;
+}
+
+.card:hover {
+  box-shadow: 0.063rem 0.063rem 1.25rem 0.375rem rgb(0 0 0 / 53%);
+}
+
+.card:nth-child(1)::before {
+  bottom: 0;
+  right: 0;
+  clip-path: circle(calc(6.25rem + 7.5vw) at 100% 100%);
+}
+
+.card:nth-child(2)::before {
+  bottom: 0;
+  left: 0;
+  clip-path: circle(calc(6.25rem + 7.5vw) at 0% 100%);
+}
+
+.card:nth-child(3)::before {
+  top: 0;
+  right: 0;
+  clip-path: circle(calc(6.25rem + 7.5vw) at 100% 0%);
+}
+
+.card:nth-child(4)::before {
+  top: 0;
+  left: 0;
+  clip-path: circle(calc(6.25rem + 7.5vw) at 0% 0%);
+}
+
+.card p {
+  transition: 0.8s;
+}
+
+.card:hover::before {
+  clip-path: circle(110vw at 100% 100%);
+}
+
+.card:hover p {
+  color: #fff;
+}
+
+.card:nth-child(1) .circle {
+  background: url("./images/services_1.jpg")
+    no-repeat 50% 50% / cover;
+  bottom: 0;
+  right: 0;
+  clip-path: circle(calc(6.25rem + 7.5vw) at 100% 100%);
+}
+
+.card:nth-child(2) .circle {
+  background: url("./images/services_2.jpg")
+    no-repeat 50% 50% / cover;
+  bottom: 0;
+  left: 0;
+  clip-path: circle(calc(6.25rem + 7.5vw) at 0% 100%);
+}
+
+.card:nth-child(3) .circle {
+  background: url("./images/services_3.jpg")
+    no-repeat 50% 50% / cover;
+  top: 0;
+  right: 0;
+  clip-path: circle(calc(6.25rem + 7.5vw) at 100% 0%);
+}
+
+.card:nth-child(4) .circle {
+  background: url("./images/services_4.jpg")
+    no-repeat 50% 50% / cover;
+  top: 0;
+  left: 0;
+  clip-path: circle(calc(6.25rem + 7.5vw) at 0% 0%);
 }
