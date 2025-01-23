@@ -11,6 +11,28 @@
 *{
   scroll-behavior: smooth;
 }
+.polka{
+    background:
+        radial-gradient(#65519777 2px, transparent 3px),
+        radial-gradient(#65519777 2px, transparent 3px),
+        #fff;
+    background-position: 0 0, 20px 20px;
+    background-size: 40px 40px;
+}
+.check {
+  background: rgba(0, 0, 0, 0.075);
+  background-image:
+    linear-gradient(white 2px, transparent 0),
+    linear-gradient(90deg, white 2px, transparent 0),
+    linear-gradient(hsla(0,0%,100%,.3) 1px, transparent 0),
+    linear-gradient(90deg, hsla(0,0%,100%,.3) 1px, transparent 0);
+  background-size: 
+    75px 75px,
+    75px 75px,
+    15px 15px,
+    15px 15px;
+}
+
 h2 {
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
